@@ -10,6 +10,7 @@ import 'spectre.css/dist/spectre-icons.css'
 import ButtonUsage from './usages/Button';
 import AvatarUsage from './usages/Avatar';
 import CardUsage from './usages/Card';
+import FormUsage from './usages/Form';
 
 class Demo extends Component {
   render() {
@@ -17,6 +18,7 @@ class Demo extends Component {
       <ButtonUsage title="Button Usage" id="button-usage" />
       <AvatarUsage title="Avatar Usage" id="avatar-usage"/>
       <CardUsage title="Card Usage" id="card-usage" />
+      <FormUsage title="Form Usage" id="form-usage" />
     </div>
   }
 }
