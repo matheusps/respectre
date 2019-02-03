@@ -10,7 +10,9 @@ const FormUsage = props => (
     <Article {...props}>
         <div style={style}>
             <Form>
-                <Form.Input />
+                <Form.Group>
+                    <Form.Group.Input />
+                </Form.Group>
             </Form>
         </div>
     </Article>

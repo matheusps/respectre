@@ -1,5 +1,5 @@
 import React from 'react'
-import Proptypes from './Proptypes'
+import Proptypes from '../Proptypes'
 
 const CardImage = ({ src, modifiers, children, ...props }) => (
     <div className={`card-image ${modifiers}`} {...props}>

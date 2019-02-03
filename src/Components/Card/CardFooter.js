@@ -1,5 +1,5 @@
 import React from 'react'
-import Proptypes from './Proptypes'
+import Proptypes from '../Proptypes'
 
 const CardFooter = ({ children, modifiers, ...props }) => (
     <div className={`card-footer ${modifiers}`} {...props} >

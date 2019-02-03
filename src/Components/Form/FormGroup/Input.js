@@ -1,12 +1,10 @@
 import React from 'react'
-import { string } from 'prop-types'
+import Proptypes from '../../Proptypes';
 
 const Input = ({ modifiers, ...props }) => (
     <input className={`form-input ${modifiers}`} {...props} />
 )
 
-Input.propTypes = {
-    modifiers: string
-}
+Input.propTypes = Proptypes
 
 export default Input

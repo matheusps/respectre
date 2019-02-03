@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from './Proptypes'
+import PropTypes from '../Proptypes'
 import CardHeader from './Header';
 import CardBody from './CardBody';
 import CardImage from './CardImage';

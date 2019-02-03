@@ -1,17 +1,15 @@
 import React from 'react'
-import { string } from 'prop-types'
-import Input from './Input';
+import FormGroup from './FormGroup'
+import Proptypes from '../Proptypes';
 
 const Form = ({ modifiers, children }) => (
-    <form className={`form-group ${modifiers}`}>
+    <form className={`form-horizonta ${modifiers}`}>
         { children }
     </form>
 )
 
-Form.Input = Input
+Form.Group = FormGroup
 
-Form.propTypes = {
-    modifiers: string
-}
+Form.propTypes = Proptypes
 
 export default Form
