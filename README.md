@@ -4,7 +4,10 @@
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
-Describe respectre here.
+#### Available Components
+✅ **Done** \
+❎ **Missing Tests** \
+❌ **Missing Implementation**
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
@@ -14,3 +17,9 @@ Describe respectre here.
 
 [coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
 [coveralls]: https://coveralls.io/github/user/repo
+
+| Components | Spectre Docs | Status
+| :--: | :---: | :---:
+| Avatar | [↗️](https://picturepan2.github.io/spectre/components/avatars.html) | ❎ 
+| Button | [↗️](https://picturepan2.github.io/spectre/elements/buttons.html) | ❎ 
+| Card | [↗️](https://picturepan2.github.io/spectre/components/cards.html) | ❎ 
