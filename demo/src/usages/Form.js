@@ -6,13 +6,33 @@ const style = {
     width: '30%'
 }
 
+const forms = [
+    'text',
+    'email',
+    'url',
+    'search',
+    'tel',
+    'password',
+    'number',
+    'date',
+    'color',
+    'file'
+]
+
+const capitalize = text => text.charAt(0).toUpperCase() + text.slice(1)
+
 const FormUsage = props => (
     <Article {...props}>
         <div style={style}>
             <Form>
-                <Form.Group>
-                    <Form.Group.Input />
-                </Form.Group>
+                { forms.map( item => (
+                    <Form.Group key={item}>
+                        <Form.Group.Label> { capitalize(item) } </Form.Group.Label>
+                        <Form.Group.TextInput type={item} />
+                    </Form.Group>
+                ))
+                }
+                
             </Form>
         </div>
     </Article>
