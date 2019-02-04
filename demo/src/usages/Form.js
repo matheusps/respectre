@@ -27,8 +27,8 @@ const FormUsage = props => (
             <Form>
                 { forms.map( item => (
                     <Form.Group key={item}>
-                        <Form.Group.Label> { capitalize(item) } </Form.Group.Label>
-                        <Form.Group.TextInput type={item} />
+                        <Form.Group.Label htmlFor={`id__${item}`}> { capitalize(item) } </Form.Group.Label>
+                        <Form.Group.TextInput id={`id__${item}`} type={item} />
                     </Form.Group>
                 ))
                 }

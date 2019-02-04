@@ -1,9 +1,9 @@
 import React from 'react'
 import Proptypes from '../../Proptypes'
-import { oneOf } from 'prop-types'
+import { oneOf, string } from 'prop-types'
 
-const TextInput = ({ modifiers, type, ...props }) => (
-    <input type={type} className={`form-input ${modifiers}`} {...props} />
+const TextInput = ({ id, modifiers, type, ...props }) => (
+    <input id={id} type={type} className={`form-input ${modifiers}`} {...props} />
 )
 
 TextInput.defaultProps = {
@@ -12,6 +12,7 @@ TextInput.defaultProps = {
 
 TextInput.propTypes = {
     ...Proptypes,
+    id: string.isRequired,
     type: oneOf([
         'text',
         'email',

@@ -3,7 +3,7 @@ import FormGroup from './FormGroup'
 import Proptypes from '../Proptypes';
 
 const Form = ({ modifiers, children }) => (
-    <form className={`form-horizonta ${modifiers}`}>
+    <form className={`form-horizontal ${modifiers}`}>
         { children }
     </form>
 )
