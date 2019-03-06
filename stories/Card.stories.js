@@ -1,12 +1,13 @@
-import React from 'react'
-import Article from './Article'
-import { Card, Button } from '../../../src/Components'
+import React, { Fragment } from 'react'
+import { storiesOf } from '@storybook/react'
+import { Card } from '../lib/respectre'
+import '../lib/respectre.css'
 
 const imageSource =
   'https://static1.squarespace.com/static/58817d60d2b85782338743f1/t/59acb965f9a61e6ef12a8021/1504491926588/gis+header+1.jpg?format=1500w'
 
-const CardUsage = props => (
-  <Article {...props}>
+storiesOf('Card', module)
+  .add('with text', () => (
     <Card style={{ width: 300, height: 400 }}>
       <Card.Image src={imageSource} />
       <Card.Header>
@@ -20,7 +21,5 @@ const CardUsage = props => (
         <Button>Click me, dude</Button>
       </Card.Footer>
     </Card>
-  </Article>
-)
-
-export default CardUsage
+  ))
+  .add('with image', () => <Fragment />)

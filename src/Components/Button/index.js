@@ -1,10 +1,20 @@
 import React from 'react'
-import { string, oneOf, bool } from 'prop-types'
+import PropTypes from 'prop-types'
 
 const getClass = param => !!param && `btn-${param}`
 
-const Button = ({ children, color, size, action, circle, active, loading, disabled, ...props }) => (
-    <button 
+const Button = ({
+  children,
+  color,
+  size,
+  action,
+  circle,
+  active,
+  loading,
+  disabled,
+  ...props
+}) => (
+  <button
     className={`
         btn
         ${getClass(color)}
@@ -16,19 +26,19 @@ const Button = ({ children, color, size, action, circle, active, loading, disabl
     `}
     disabled={disabled}
     {...props}
-    >
-        { children }
-    </button>
+  >
+    {children}
+  </button>
 )
 
 Button.propTypes = {
-    color: string,
-    size: oneOf([ 'sm', 'lg' ]),
-    action: bool,
-    circle: bool,
-    active: bool,
-    disabled: bool,
-    loading: bool
+  color: PropTypes.string,
+  size: PropTypes.oneOf(['sm', 'lg', 'block']),
+  action: PropTypes.bool,
+  circle: PropTypes.bool,
+  active: PropTypes.bool,
+  disabled: PropTypes.bool,
+  loading: PropTypes.bool,
 }
 
 export default Button

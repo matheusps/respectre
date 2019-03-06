@@ -1,5 +1,5 @@
-import { string } from 'prop-types'
+import PropTypes from 'prop-types'
 
 export default {
-    modifiers: string
+  modifiers: PropTypes.string,
 }
