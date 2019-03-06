@@ -1,5 +1,5 @@
 import React from 'react'
-import { string, oneOf } from 'prop-types'
+import PropTypes from 'prop-types'
 
 const Avatar = ({ size, background, image, chars }) => (
   <figure
@@ -16,8 +16,8 @@ Avatar.defaultProps = {
 }
 
 Avatar.propTypes = {
-  size: oneOf(['xl', 'lg', 'sm', 'xs']),
-  background: oneOf([
+  size: PropTypes.oneOf(['xl', 'lg', 'sm', 'xs']),
+  background: PropTypes.oneOf([
     'primary',
     'secondary',
     'dark',
@@ -26,8 +26,8 @@ Avatar.propTypes = {
     'warning',
     'error',
   ]),
-  image: string,
-  chars: string,
+  image: PropTypes.string,
+  chars: PropTypes.string,
 }
 
 export default Avatar

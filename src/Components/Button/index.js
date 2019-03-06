@@ -1,5 +1,5 @@
 import React from 'react'
-import { string, oneOf, bool } from 'prop-types'
+import PropTypes from 'prop-types'
 
 const getClass = param => !!param && `btn-${param}`
 
@@ -32,13 +32,13 @@ const Button = ({
 )
 
 Button.propTypes = {
-  color: string,
-  size: oneOf(['sm', 'lg']),
-  action: bool,
-  circle: bool,
-  active: bool,
-  disabled: bool,
-  loading: bool,
+  color: PropTypes.string,
+  size: PropTypes.oneOf(['sm', 'lg']),
+  action: PropTypes.bool,
+  circle: PropTypes.bool,
+  active: PropTypes.bool,
+  disabled: PropTypes.bool,
+  loading: PropTypes.bool,
 }
 
 export default Button
