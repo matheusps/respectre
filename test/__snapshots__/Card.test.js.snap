@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Matches Snapshot 1`] = `
+<div
+  className="card undefined"
+>
+  <div
+    className="card-image undefined"
+  >
+    <img
+      className="img-responsive"
+      src="https://static1.squarespace.com/static/58817d60d2b85782338743f1/t/59acb965f9a61e6ef12a8021/1504491926588/gis+header+1.jpg?format=1500w"
+    />
+  </div>
+  <div
+    className="card-header undefined"
+  >
+    <div
+      className="card-title h5"
+    >
+      My title
+    </div>
+    <div
+      className="card-title text-gray"
+    >
+      My subtitle
+    </div>
+  </div>
+  <div
+    className="card-body undefined"
+  >
+    This describes my card body
+  </div>
+  <div
+    className="card-footer undefined"
+  >
+    <span>
+      Footer
+    </span>
+  </div>
+</div>
+`;

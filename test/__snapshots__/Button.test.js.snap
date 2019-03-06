@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Matches Snapshot 1`] = `
+<button
+  className="
+        btn
+        false
+        btn-lg
+        undefined
+        undefined
+        undefined
+        undefined
+    "
+>
+  Button Test
+</button>
+`;
