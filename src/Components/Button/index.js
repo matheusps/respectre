@@ -33,7 +33,7 @@ const Button = ({
 
 Button.propTypes = {
   color: PropTypes.string,
-  size: PropTypes.oneOf(['sm', 'lg']),
+  size: PropTypes.oneOf(['sm', 'lg', 'block']),
   action: PropTypes.bool,
   circle: PropTypes.bool,
   active: PropTypes.bool,

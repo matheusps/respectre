@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import 'spectre.css/src/_avatars.scss'
 
 const Avatar = ({ size, background, image, chars }) => (
   <figure
