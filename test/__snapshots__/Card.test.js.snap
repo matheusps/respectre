@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card Matches Snapshot 1`] = `
+exports[`Card should match snapshot 1`] = `
 <div
   className="card undefined"
 >
@@ -9,7 +9,7 @@ exports[`Card Matches Snapshot 1`] = `
   >
     <img
       className="img-responsive"
-      src="https://static1.squarespace.com/static/58817d60d2b85782338743f1/t/59acb965f9a61e6ef12a8021/1504491926588/gis+header+1.jpg?format=1500w"
+      src="testing"
     />
   </div>
   <div

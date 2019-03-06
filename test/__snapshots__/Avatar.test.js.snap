@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Avatar Matches Snapshot 1`] = `
+exports[`Avatar should match snapshot 1`] = `
 <figure
   className="avatar avatar-xl bg-primary"
   data-initial="XL"

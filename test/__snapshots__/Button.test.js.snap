@@ -1,16 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button Matches Snapshot 1`] = `
+exports[`Button should match snapshot 1`] = `
 <button
-  className="
-        btn
-        false
-        btn-lg
-        undefined
-        undefined
-        undefined
-        undefined
-    "
+  className="btn btn-lg"
+  disabled={false}
+  onClick={[Function]}
 >
   Button Test
 </button>
