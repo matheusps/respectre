@@ -3,10 +3,9 @@ import Article from './Article'
 import { Button } from '../../../src/Components'
 
 const ButtonUsage = props => (
-    <Article {...props}>
-        <Button />
-    </Article>
+  <Article {...props}>
+    <Button />
+  </Article>
 )
 
 export default ButtonUsage
-
