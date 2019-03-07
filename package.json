@@ -15,7 +15,7 @@
     "prepublishOnly": "npm run build",
     "start": "",
     "test": "jest",
-    "test:coverage": "",
+    "test:coverage": "jest --collectCoverage && cat ./coverage/lcov.info | coveralls",
     "test:watch": "",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
