@@ -1,22 +1,12 @@
 # respectre
 
-[![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
+[![Build Status](https://travis-ci.org/matheusps/respectre.svg?branch=master)](https://travis-ci.org/matheusps/respectre) 
+[![Coverage Status](https://coveralls.io/repos/github/matheusps/respectre/badge.svg?branch=master)](https://coveralls.io/github/matheusps/respectre?branch=master)
 
 #### Available Components
 ✅ **Done** \
 ❎ **Missing Tests** \
 ❌ **Missing Implementation**
-
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
-
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
-
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
 
 | Components | Spectre Docs | Status
 | :--: | :---: | :---:
