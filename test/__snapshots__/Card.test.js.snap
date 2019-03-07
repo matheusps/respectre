@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should match snapshot 1`] = `
+<div
+  className="card undefined"
+>
+  <div
+    className="card-image undefined"
+  >
+    <img
+      className="img-responsive"
+      src="testing"
+    />
+  </div>
+  <div
+    className="card-header undefined"
+  >
+    <div
+      className="card-title h5"
+    >
+      My title
+    </div>
+    <div
+      className="card-title text-gray"
+    >
+      My subtitle
+    </div>
+  </div>
+  <div
+    className="card-body undefined"
+  >
+    This describes my card body
+  </div>
+  <div
+    className="card-footer undefined"
+  >
+    <span>
+      Footer
+    </span>
+  </div>
+</div>
+`;

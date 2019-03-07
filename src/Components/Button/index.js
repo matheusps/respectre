@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 const getClass = param => !!param && `btn-${param}`
 
@@ -13,23 +14,19 @@ const Button = ({
   loading,
   disabled,
   ...props
-}) => (
-  <button
-    className={`
-        btn
-        ${getClass(color)}
-        ${getClass(size)}
-        ${action && 'btn-action'}
-        ${circle && 's-circle'}
-        ${loading && 'loading'}
-        ${active && 'active'}
-    `}
-    disabled={disabled}
-    {...props}
-  >
-    {children}
-  </button>
-)
+}) => {
+  const buttonClasses = classNames('btn', getClass(color), getClass(size), {
+    'btn-action': action,
+    's-circle': circle,
+    loading: loading,
+    active: active,
+  })
+  return (
+    <button className={buttonClasses} disabled={disabled} {...props}>
+      {children}
+    </button>
+  )
+}
 
 Button.propTypes = {
   color: PropTypes.string,
@@ -39,6 +36,10 @@ Button.propTypes = {
   active: PropTypes.bool,
   disabled: PropTypes.bool,
   loading: PropTypes.bool,
+}
+
+Button.defaultProps = {
+  disabled: false,
 }
 
 export default Button
