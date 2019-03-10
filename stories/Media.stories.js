@@ -8,7 +8,7 @@ import {
   number,
   color,
 } from '@storybook/addon-knobs'
-import { Image, Figure } from '../lib/respectre'
+import { Image, Figure, Video } from '../lib/respectre'
 import '../lib/respectre.css'
 
 const EX_URL =
@@ -65,5 +65,33 @@ storiesOf('Media', module)
         />
         <Figure.Caption>This is a awesome image</Figure.Caption>
       </Figure>
+    </Container>
+  ))
+  .add('Video', () => (
+    <Container
+      width={number('Container Width', 400)}
+      height={number('Container Height', 400)}
+      background={color('Container Background', 'rgb(255, 242, 235)')}
+    >
+      <Video
+        ratio={select(
+          'Ratios',
+          {
+            '16:9': '16:9',
+            '1:1': '1:1',
+            '4:3': '4:3',
+          },
+          ''
+        )}
+      >
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/onOEns_MnC4"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+      </Video>
     </Container>
   ))
