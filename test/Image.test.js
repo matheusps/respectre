@@ -1,10 +1,14 @@
 import React from 'react'
 import Image from '../src/Components/Image'
 import renderer from 'react-test-renderer'
-import { classNames } from 'classnames'
 
 describe('Image', () => {
   it('should match snapshot', () => {
+    const component = renderer.create(<Image src="testing" />).toJSON()
+    expect(component).toMatchSnapshot()
+  })
+
+  it('should match snapshot with props', () => {
     const component = renderer
       .create(<Image src="testing" responsive fit="contain" />)
       .toJSON()

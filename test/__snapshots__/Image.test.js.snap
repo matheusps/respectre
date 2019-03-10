@@ -2,6 +2,13 @@
 
 exports[`Image should match snapshot 1`] = `
 <img
+  className="img-fit-undefined"
+  src="testing"
+/>
+`;
+
+exports[`Image should match snapshot with props 1`] = `
+<img
   className="img-fit-contain img-responsive"
   src="testing"
 />
