@@ -2,11 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
-const Label = ({ className, theme, rounded, children }) => {
+const Label = ({ className, theme, rounded, children, ...props }) => {
   const labelClaasses = classNames(className, 'label', `label-${theme}`, {
     'label-rounded': rounded,
   })
-  return <span className={labelClaasses}>{children}</span>
+  return (
+    <span className={labelClaasses} {...props}>
+      {children}
+    </span>
+  )
 }
 
 Label.propTypes = {
