@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Figure should match snapshot 1`] = `
+<figure
+  className="figure"
+/>
+`;
+
+exports[`Figure should match snapshot with caption 1`] = `
+<figure
+  className="figure"
+>
+  <figcaption
+    className="figure-caption text-center"
+  >
+    Testing
+  </figcaption>
+</figure>
+`;
+
+exports[`Figure should match snapshot with image 1`] = `
+<figure
+  className="figure"
+>
+  <img
+    className="img-fit-undefined"
+    src="testing"
+  />
+</figure>
+`;
+
+exports[`Figure should match snapshot with image and caption 1`] = `
+<figure
+  className="figure"
+>
+  <img
+    className="img-fit-undefined"
+    src="testing"
+  />
+  <figcaption
+    className="figure-caption text-center"
+  >
+    Testing
+  </figcaption>
+</figure>
+`;

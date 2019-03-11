@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import { storiesOf } from '@storybook/react'
-import { Card } from '../lib/respectre'
+import { Card, Button } from '../lib/respectre'
 import '../lib/respectre.css'
 
 const imageSource =

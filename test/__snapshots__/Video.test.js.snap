@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Video should match snapshot 1`] = `
+<video
+  className="video-responsive video-responsive-16-9"
+  src="testing"
+/>
+`;
+
+exports[`Video should match snapshot with children 1`] = `
+<div
+  className="video-responsive video-responsive-16-9"
+>
+  <iframe />
+</div>
+`;
+
+exports[`Video should match snapshot with props 1`] = `
+<video
+  className="video-responsive video-responsive-16-9"
+  src="testing"
+/>
+`;
+
+exports[`Video should match snapshot with props 2`] = `
+<video
+  className="video-responsive video-responsive-1-1"
+  src="testing"
+/>
+`;
+
+exports[`Video should match snapshot with props 3`] = `
+<video
+  className="video-responsive video-responsive-4-3"
+  src="testing"
+/>
+`;
