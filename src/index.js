@@ -4,7 +4,8 @@ import Card from './Components/Card'
 import Image from './Components/Image'
 import Figure from './Components/Figure'
 import Video from './Components/Video'
+import Label from './Components/Label'
 
 import 'spectre.css/src/spectre.scss'
 
-export { Avatar, Button, Card, Image, Figure, Video }
+export { Avatar, Button, Card, Image, Figure, Video, Label }
